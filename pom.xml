@@ -5,6 +5,10 @@
   <artifactId>HW_Hibernate</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+  </properties>
   <name>HW_Hibernate Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -48,5 +52,15 @@
   </dependencies>
   <build>
     <finalName>HW_Hibernate</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>11</source>
+          <target>11</target>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>
